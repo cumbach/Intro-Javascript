@@ -166,4 +166,28 @@ function fib(n) {
   // result = fib(n-1)[-1] + fib(n-1)[-2]
   // return [fib(n-1), fib(n-1)[-1] + fib(n-1)[-2]];
 }
-console.log(fib(10));
+// console.log(fib(10));
+
+function Cat(name,owner) {
+  this.name = name;
+  this.owner = owner;
+}
+
+// Cat.prototype.cuteStatement = function() {
+//   return this.owner + " loves " + this.name;
+// };
+Cat.prototype.meow2 = function () {
+  return "meow2";
+};
+
+
+var cat1 = new Cat("cat1name", "cat1owner");
+var cat2 = new Cat("cat2name", "cat2owner");
+cat1.meow = function () {
+  return "purr";
+};
+console.log(cat2.meow2());
+console.log(cat1.meow());
+
+
+// cat1.cuteStatement;
